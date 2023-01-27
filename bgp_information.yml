@@ -7,4 +7,4 @@
     - name: Gather legacy and resource facts
       cisco.ios.ios_facts:
         gather_subset: all
-        gather_network_resources: bgp_global
+        gather_network_resources: ospf_interfaces
