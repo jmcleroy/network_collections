@@ -6,4 +6,4 @@
   tasks:
     - name: Gather interface errors
       cisco.ios.ios_command:
-        commands: show interfaces
+        commands: show interfaces counters
