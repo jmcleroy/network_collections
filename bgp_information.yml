@@ -6,5 +6,5 @@
   tasks:
     - name: Gather legacy and resource facts
       cisco.ios.ios_facts:
-        gather_subset: bgp_global
-        gather_network_resources: all
+        gather_subset: all
+        gather_network_resources: bgp_global
