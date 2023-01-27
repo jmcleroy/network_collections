@@ -4,10 +4,7 @@
   gather_facts: no
 
   tasks:
-    - name: Gather only the interfaces resource facts and no legacy facts
+    - name: Gather L2 interfaces resource and minimal legacy facts
       cisco.ios.ios_facts:
-        gather_subset:
-          - '!all'
-          - '!min'
-        gather_network_resources:
-          - interfaces
+        gather_subset: min
+        gather_network_resources: l2_interfaces
